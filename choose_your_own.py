@@ -6,6 +6,8 @@ import time
 import json
 import math
 choice = 1
+global score
+score = 0
 # 1, 2, 3, 4
 window = Tk()
 window.title("Choose you own adventure | By Alfredo")
@@ -25,6 +27,8 @@ def make_text_correspondence(scene):
 		canvas.create_text(260,535,text="spot a fork in the road. Go left or right.", fill="black", font = ("Helvetica",15),anchor="nw")
 		make_choices(scene)
 		make_background(scene)
+	global score
+	score = 69
 	
 	if scene == 2: #press button or not
 		canvas.create_text(260,510,text="You go left. You spot a mysterious red button. Do you ", fill="black", font = ("Helvetica",15),anchor="nw")
@@ -310,6 +314,9 @@ def mouse_was_clicked(event):
 		event.x = 0
 		event.y = 0
 
+import rick_roll
+rick_roll.rickroll()
+		
 window.bind("<Button-1>",mouse_was_clicked)
 make_text_correspondence(1)
 window.mainloop()
