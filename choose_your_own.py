@@ -8,7 +8,7 @@ import math
 choice = 1
 # 1, 2, 3, 4
 window = Tk()
-window.title("Choose you own adventure")
+window.title("Choose you own adventure | By Alfredo")
 
 canvas = Canvas(window, width=1000, height=700,bg="white")
 canvas.pack()
